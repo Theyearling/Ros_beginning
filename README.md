@@ -39,3 +39,14 @@
     
  # 安装依赖：
     rosdep install --from-paths src --ignore-src --rosdistro=noetic -y
+
+# flashfxp与Ubuntu16.04文件传递：
+  sudo  apt-get  install  vsftpd //Ubuntu下载vsftpd
+  
+  sudo  gedit  /etc/vsftpd.conf //修改配置文件<br>
+  #local_enable=YES<br>
+  #write_enable=YES //去掉#号
+  
+  sudo  /etc/init.d/vsftpd  start //启动命令<br>
+  sudo  /etc/init.d/vsftpd  stop //关闭命令
+  
