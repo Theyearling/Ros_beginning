@@ -1,6 +1,9 @@
 # Ros_begening
 # some problem in ros-learning
 
+# sudo apt-get update出现:由于没有公钥，无法验证下列签名：NO_PUBKEY F42ED6FBAB17C654
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
+
 # rosdep init、upgate:
 主要原因是网速和墙<br>
  1.建议换成手机热点<br>
