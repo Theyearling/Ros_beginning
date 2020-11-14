@@ -13,6 +13,9 @@
 
 # gazebo参数出错：
  export SVGA VGPU10=0
+ 
+# gazebo360°旋转：
+ shift+旋转
 
 # Contronller does not exit：
  sudo apt-get install ros*contronller*
