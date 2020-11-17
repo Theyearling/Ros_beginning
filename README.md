@@ -70,7 +70,10 @@
     sudo apt-get install ros-kinetic-effort-controllers <br>
     sudo apt-get install ros-kinetic-joint-trajectory-controller
         
-# GazeboRosControlPlugin missing <legacyModeNS> ： 
-      urdf 描述文件中，对 gazebo 插件描述添加 <legacyModeNS>true</legacyModeNS>
-      <image>
+# GazeboRosControlPlugin missing "<"legacyModeNS">" ： 
+  urdf 描述文件中，对 gazebo 插件描述添加 <legacyModeNS>true</legacyModeNS><br>
+  
+![image](https://github.com/Lillal/Ros_begening/blob/main/IMG/legacyModeNS.png)
+
+
   
