@@ -43,7 +43,7 @@
     <run_depend>gmapping</run_depend>
     <run_depend>hector_mapping</run_depend>
     
- # 安装依赖：
+# 安装依赖：
     rosdep install --from-paths src --ignore-src --rosdistro=noetic -y
 
 # flashfxp与Ubuntu16.04文件传递：
@@ -55,4 +55,20 @@
   
   sudo  /etc/init.d/vsftpd  start //启动命令<br>
   sudo  /etc/init.d/vsftpd  stop //关闭命令
+  
+# 没有安装相应的ros控制软件包 
+    Could not load controller 'joint_state_controller' because controller type 'joint_state_controller/JointStateController' does not exist.
+    Could not load controller 'joint_position_controller' because controller type 'joint_position_controller/JointPositionController' does not exist.
+    Could not load controller 'joint_velocity_controller' because controller type 'joint_velocity_controller/JointVelocityController' does not exist.
+    
+  __solve:__<br>
+      sudo apt-get install ros-kinetic-joint-state-controller<br>
+      sudo apt-get install ros-kinetic-position-controllers<br>
+      sudo apt-get install ros-kinetic-velocity-controllers<br>
+    
+  **advice:**<br>
+    sudo apt-get install ros-kinetic-effort-controllers <br>
+    sudo apt-get install ros-kinetic-joint-trajectory-controller
+        
+    
   
