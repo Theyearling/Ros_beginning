@@ -75,5 +75,8 @@
   
 ![image](https://github.com/Lillal/Ros_begening/blob/main/IMG/legacyModeNS.png)
 
+# 运行Turtlebot时出现'TURTLEBOT_GAZEBO_WORLD_FILE' is not set
+  export TURTLEBOT_GAZEBO_WORLD_FILE=/opt/ros/kinetic/share/turtlebot_gazebo/worlds/playground.world
+
 
   
