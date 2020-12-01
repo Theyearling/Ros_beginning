@@ -15,7 +15,7 @@
  export SVGA VGPU10=0
  
 # gazebo360°旋转：
- shift+旋转
+ shift+旋转、鼠标左右中建各有功能
 
 # Contronller does not exit：
  sudo apt-get install ros*contronller*
