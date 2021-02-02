@@ -1,5 +1,6 @@
 # 文件浏览基本指令
     $ rospack find [package_name] 找到指定ros功能包并返回路径
+    $ rospack depends [package_name] 查看包的依赖
     
     $ roscd [locationname[/subdir]] 进入指定包的某个文件夹目录下
     $ roscd log 进入ros的log文件目录下/也可以通过Ctrl+h打开隐藏文件，自行查找log文件
