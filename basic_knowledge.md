@@ -1,3 +1,11 @@
+# 文件浏览基本指令
+    $ rospack find [package_name] 找到指定ros功能包并返回路径
+    
+    $ roscd [locationname[/subdir]] 进入指定包的某个文件夹目录下
+    $ roscd log 进入ros的log文件目录下/也可以通过Ctrl+h打开隐藏文件，自行查找log文件
+    
+    $ rosls [locationname[/subdir]] 显示指定文件夹下包含的文件
+
 
 # URDF 文件中坐标的理解（xyz、rpy）
     xyz就是正交坐标xyz（满足右手定则）
