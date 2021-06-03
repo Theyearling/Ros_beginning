@@ -21,9 +21,9 @@
  sudo apt-get install ros*contronller*
  
 # 添加依赖不成功：
- [ROS packages for Kinetic]( http://repositories.ros.org/status_page/ros_noetic_default.html)<br>
+ [ROS packages for Kinetic]( http://repositories.ros.org/status_page/ros_kinetic_default.html)<br>
  [ROS packages for Noetic](http://repositories.ros.org/status_page/ros_noetic_default.html)<br>
- 可以看到noetic至少少了1000+的依赖包，只能自行下载package到/home/theyearling/catkin_ws/src
+ 可以看到noetic少了1000+的依赖包，只能自行下载package到/home/theyearling/catkin_ws/src
  
  # catkin_make出错：
     hector_mappingConfig.cmake
