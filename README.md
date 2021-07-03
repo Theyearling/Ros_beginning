@@ -78,5 +78,10 @@
 # 运行Turtlebot时出现'TURTLEBOT_GAZEBO_WORLD_FILE' is not set
   export TURTLEBOT_GAZEBO_WORLD_FILE=/opt/ros/kinetic/share/turtlebot_gazebo/worlds/playground.world
 
+# 调节鼠标灵敏度
+    xinput --list //查看设备id
+    xinput --list-props id //查看对应id设备的相关参数
+    xinput --set-prop id 设备对应的参数标识 0.3 0 0 0 0.3 0 0 0 1 //默认参数为:1 0 0 0 1 0 0 0 1
+  
 
   
