@@ -1,4 +1,4 @@
-# Ros_begening
+# Ros_begenning
 # some problem in ros-learning
 
 # sudo apt-get update出现:由于没有公钥，无法验证下列签名：NO_PUBKEY F42ED6FBAB17C654
