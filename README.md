@@ -9,8 +9,8 @@
  1.建议换成手机热点<br>
  2.爪巴墙，<br>https://github.com/Qv2ray/Qv2ray<br>
            https://github.com/v2fly/v2ray-core/releases<br>
-    搭建梯子出墙，一切就迎刃而解。
-
+    搭建梯子出墙，一切就迎刃而解。<br>
+    **sudo chmod a+x Qv2ray.v2.6.3.linux-x64.AppImage**<br>
 # gazebo参数出错：
  export SVGA VGPU10=0
  
