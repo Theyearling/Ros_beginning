@@ -1,8 +1,12 @@
 # Ros_begeinning
 # some problem in ros-learning
 
+# 安装ROS时设置key
+ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116<br>
+ 如果无法连接上述服务器，可以尝试hkp://pgp.mit.edu:80或者hkp://keyserver.ubuntu.coｍ<br>
+
 # sudo apt-get update出现:由于没有公钥，无法验证下列签名：NO_PUBKEY F42ED6FBAB17C654
-  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654　对应输出的数字
 
 # rosdep init、upgate:
 主要原因是网速和墙<br>
