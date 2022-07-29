@@ -86,6 +86,11 @@
     xinput --list //查看设备id
     xinput --list-props id //查看对应id设备的相关参数
     xinput --set-prop id 设备对应的参数标识 0.3 0 0 0 0.3 0 0 0 1 //默认参数为:1 0 0 0 1 0 0 0 1
+    
+# Ubuntu外接显示器黑屏
+  xrandr //查看Ubuntu是否识别出外接显示器
+  软件与更新 中更换附加驱动为 NVIDIA驱动
+  貌似要挂梯子才能更换成功
   
 # /etc/apt/sources.list
     # deb cdrom:[Ubuntu 16.04.7 LTS _Xenial Xerus_ - Release amd64 (20200806)]/ xenial main restricted
