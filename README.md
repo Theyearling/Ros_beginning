@@ -92,6 +92,9 @@
   软件与更新 中更换附加驱动为 NVIDIA驱动
   貌似要挂梯子才能更换成功
   
+# huanyu小车外接显示器频闪（频繁黑屏）
+  更换显示器的分辨率（一般是降低）
+  
 # /etc/apt/sources.list
     # deb cdrom:[Ubuntu 16.04.7 LTS _Xenial Xerus_ - Release amd64 (20200806)]/ xenial main restricted
 
