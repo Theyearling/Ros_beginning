@@ -95,6 +95,12 @@
 # huanyu小车外接显示器频闪（频繁黑屏）
   更换显示器的分辨率（一般是降低）
   
+# ERROR: cannot launch node of type
+  一般是因为该节点没有执行权限<br>
+  roscd package/nodes<br>
+  chomd +x 对应的文件<br>
+  添加执行权限即可
+  
 # /etc/apt/sources.list
     # deb cdrom:[Ubuntu 16.04.7 LTS _Xenial Xerus_ - Release amd64 (20200806)]/ xenial main restricted
 
