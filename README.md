@@ -154,3 +154,22 @@
     deb http://mirrors.ustc.edu.cn/ubuntu/ xenial-security multiverse
     # deb-src http://security.ubuntu.com/ubuntu xenial-security multiverse
   
+# catkin_make -DCATKIN_WHITELIST_PACKAGES=包名
+    单独编译这个包，之后再使用catkin_make 会默认只编译这个包
+
+# catkin_make -DCATKIN_WHITELIST_PACKAGES=""
+    编译工作空间中的所有包，之后再使用catkin_make 会默认编译整个工作空间
+
+# C++编译提示expected class-name before '{' token
+    继承父类时出现该错误大概率是因为基类头文件中嵌套包含了自己
+    
+# C++ 编译 invalid use of incomplete type
+    在父类中使用子类中的变量或函数时，需要先引入该子类
+    
+# 出现 terminate called after throwing an instance of ‘std::cad_alloc‘ what():std::bad_alloc
+    查询后说是数据量太大 导致内存爆掉？
+    我这里是因为vector下标越界
+
+# 使用自定义路径规划插件时出现 Make sure that you are calling the PLUGINLIB_EXPORT_CLASS macro in the library code, and that names are consistent between this macro and your XML
+    在move_bace中调用createInstance创建规划器实例时出错
+    一般是因为自己编写的规划器代码有问题，一般是析构函数、构造函数
