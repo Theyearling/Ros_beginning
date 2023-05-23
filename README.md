@@ -173,3 +173,30 @@
 # 使用自定义路径规划插件时出现 Make sure that you are calling the PLUGINLIB_EXPORT_CLASS macro in the library code, and that names are consistent between this macro and your XML
     在move_bace中调用createInstance创建规划器实例时出错
     一般是因为自己编写的规划器代码有问题，一般是析构函数、构造函数
+    
+# 对‘tf::TransformListener::TransformListener(ros::Duration, bool)’未定义的引用
+# 对‘costmap_2d::Costmap2DROS::Costmap2DROS 未定义的引用
+    在cmakelist文件中添加相应的包
+    find_package(catkin REQUIRED COMPONENTS
+     tf
+     costmap_2d
+    )
+    
+# 对‘ros::init(int&, char** ...’未定义的引用
+    在cmakelist文件中链接相应的库
+    target_link_libraries(${PROJECT_NAME}
+    ${catkin_LIBRARIES}
+    )
+    
+# Error:cannot launch node of type[test/test]:cannot locate node test in package test
+    保证具备一下几点
+    add_executable (test src/test.cpp)
+    add_dependencies (test ${catkin_EXPORTED_TARGETS})
+    target_link_libraries (test ${catkin_LIBRARIES})
+    并且需要将该文件赋予可执行权限
+   
+# 对于自己定义的同一个包中的源程序（.cpp）需要在cmakelist文件中被包含
+    即
+    add_library(my_test
+     src/my_test.cpp src/globalplanner
+    )
