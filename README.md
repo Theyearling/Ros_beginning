@@ -196,6 +196,7 @@
     并且需要将该文件赋予可执行权限
    
 # 对于自己定义的同一个包中的源程序（.cpp）需要在cmakelist文件中被包含
+# 对‘jps_planner::jpsPlanner::jpsPlanner()’未定义的引用
     即
     add_library(my_test
      src/my_test.cpp src/globalplanner
